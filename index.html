@@ -409,6 +409,30 @@ body.print .pass .w{color:var(--ink)}
 #s-loss .xt{width:260px}
 #s-loss .xt{height:370px;padding:34px 16px}
 #s-loss .xt h4{font-size:36px}
+
+/* v5 additions */
+.clipbox:not(.on) .cprompt{pointer-events:none}
+.cwho{margin-bottom:18px}
+.pass.fullpass{font-size:50px;line-height:1.5;margin-top:4px}
+.pass.fullpass .ln{display:inline}
+.sc4 .sc2{width:390px;height:668px;top:262px;padding:38px 32px}
+.sc4 .sc2 h3{font-size:46px;margin:14px 0 6px}
+.sc4 .sc2 .sub{font-size:31px;min-height:40px}
+.sc4 .sc2 .money{font-size:60px;margin-top:20px}
+.sc4 .sc2 .per{font-size:30px}
+.sc4 .sc2 .pt{font:600 50px/1.05 var(--big);margin-top:18px}
+.sc4 .sc2 .pt small{display:block;font:400 28px var(--body);color:var(--quiet);margin-top:4px}
+.sc4 .sc2 .mb{margin-top:24px}
+.sc4 .sc2 .line{font-size:32px;margin-top:20px}
+.sc4 .sc2.rec .tag{font-size:24px}
+.sc4 .sc2 .ic{width:72px;height:72px}
+.pp{position:absolute;top:896px;font:600 58px/1 var(--big);color:var(--green)}
+.pp small{font:400 34px var(--body);color:var(--quiet);margin-left:12px}
+.pp.o{color:var(--child)}
+.lab small{display:block;font:400 30px/1.2 var(--body);color:var(--quiet);margin-top:2px}
+.callout{position:absolute;left:120px;margin:0;font:600 60px/1.15 var(--big);color:var(--ink);max-width:1600px}
+.callout.g{color:var(--green)}
+.bar-row.k .fill{background:#8F8A80}
 </style>
 </head>
 <body>
@@ -452,6 +476,7 @@ body.print .pass .w{color:var(--ink)}
     <div class="b" data-at="4" data-until="4" style="position:absolute;left:0;top:0;display:flex;gap:28px;align-items:center"><svg class="ic g"><use href="#i-data"/></svg><p class="lead" style="margin:0">Data to decide with</p></div>
     <div class="b" data-at="5" style="position:absolute;left:0;top:0"><p class="lead" style="margin:0"><b class="g">NIETE is this ring.</b></p></div>
   </div>
+  <figure class="b" data-at="1" style="position:absolute;left:120px;top:700px;width:840px;margin:0"><img src="assets/img/niete-room-bw.jpg" alt="" style="display:block;width:840px;height:auto;border-radius:14px;filter:grayscale(1);opacity:.85;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 14%,#000 86%,transparent 100%)"><figcaption style="font:400 24px var(--body);color:#6E737B;margin-top:8px">NIETE monitoring cell, Islamabad</figcaption></figure>
   <img class="logo b" data-at="1" style="left:120px;bottom:70px;height:64px" src="assets/img/niete-wordmark.png" alt="NIETE">
 </section>
 
@@ -534,6 +559,21 @@ body.print .pass .w{color:var(--ink)}
   <div class="srow b" data-at="3" style="top:600px"><div class="who"><svg class="ic" style="color:#4A5059"><use href="#i-ai"/></svg><h4>AI coach</h4><p>24,622 recorded lessons scored by Rumi</p></div><div class="avg gr">63%<small>average score</small></div><svg class="mini" viewBox="0 0 700 270"><g stroke="#D8D5CC" stroke-width="2"><path d="M80 220H690M80 130H690M80 40H690"/></g><g font-family="Space Grotesk,sans-serif" font-size="24" fill="#5F656E"><text x="14" y="228">60</text><text x="14" y="138">65</text><text x="14" y="48">70</text></g><polyline points="190,178.6 400,135.4 610,140.8" fill="none" stroke="#4A5059" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/><circle cx="190" cy="178.6" r="16" fill="#4A5059" stroke="#4A5059" stroke-width="6"/><text x="190" y="150.6" text-anchor="middle" font-family="Source Serif 4,serif" font-weight="600" font-size="36" fill="#111418">62</text><circle cx="400" cy="135.4" r="16" fill="#4A5059" stroke="#4A5059" stroke-width="6"/><text x="400" y="107.4" text-anchor="middle" font-family="Source Serif 4,serif" font-weight="600" font-size="36" fill="#111418">65</text><circle cx="610" cy="140.8" r="16" fill="#fff" stroke="#4A5059" stroke-width="6"/><text x="610" y="112.8" text-anchor="middle" font-family="Source Serif 4,serif" font-weight="600" font-size="36" fill="#111418">64</text><text x="190" y="262" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="28" fill="#4A5059">Sep</text><text x="400" y="262" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="28" fill="#4A5059">Oct</text><text x="610" y="262" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="28" fill="#4A5059">Nov*</text></svg></div>
   <div class="b" data-at="4" style="position:absolute;left:120px;top:900px"><span class="tag o">Room to grow. Indicative, not a controlled comparison.</span></div>
   <p class="src">Average score, % of maximum, FICO rubric v3, 8 Sep to 19 Nov 2026. *Nov part month. Newer coach forms left out.</p>
+</section>
+
+<!-- HEAD TEACHERS VS COACHES -->
+<section class="slide" id="s-heads" data-core="0">
+  <h1 class="hd b" data-at="1">Same form. Two observers.</h1>
+  <div class="b" data-at="1" style="position:absolute;left:120px;top:236px;display:flex;gap:26px;align-items:center"><span class="tag">Coach</span><span class="tag o">Head teacher</span><span class="cap" style="font-size:34px;margin-left:8px">average score, out of 100</span></div>
+  <div class="bar-row b" data-at="2" style="top:300px"><div class="lab" style="width:470px">Lesson plan steps</div><div class="trk"><div class="fill" style="--w:633px"></div><span class="val" style="left:633px">70</span></div></div>
+  <div class="bar-row o b" data-at="2" style="top:388px"><div class="lab" style="width:470px"></div><div class="trk"><div class="fill" style="--w:744px"></div><span class="val" style="left:744px">83</span></div></div>
+  <div class="bar-row b" data-at="3" style="top:500px"><div class="lab" style="width:470px">Teaching practices</div><div class="trk"><div class="fill" style="--w:705px"></div><span class="val" style="left:705px">78</span></div></div>
+  <div class="bar-row o b" data-at="3" style="top:588px"><div class="lab" style="width:470px"></div><div class="trk"><div class="fill" style="--w:780px"></div><span class="val" style="left:780px">87</span></div></div>
+  <div class="bar-row b" data-at="4" style="top:700px"><div class="lab" style="width:470px">Pupil engagement</div><div class="trk"><div class="fill" style="--w:503px"></div><span class="val" style="left:503px">56</span></div></div>
+  <div class="bar-row o b" data-at="4" style="top:788px"><div class="lab" style="width:470px"></div><div class="trk"><div class="fill" style="--w:655px"></div><span class="val" style="left:655px">73</span></div></div>
+  <p class="callout g b" data-at="5" data-until="5" style="top:876px;font-size:56px">Head teachers score 8 to 17 points higher.</p>
+  <p class="callout b" data-at="6" style="top:884px;font-size:42px">Coaches made over 6 times as many observations, in twice as many schools.</p>
+  <p class="src">Old FICO form (V2), 22 Aug 2025 to 11 Jul 2026, programme schools: 5,823 coach and 896 head-teacher observations. Not a controlled comparison.</p>
 </section>
 
 <!-- 7 PLAN -->
@@ -662,11 +702,11 @@ body.print .pass .w{color:var(--ink)}
 <!-- 11 READS -->
 <section class="slide" id="s-reads" data-core="0">
   <h1 class="hd b" data-at="1">Same story. Two children.</h1>
-  <div class="clipbox b" data-at="2" data-until="2" data-clip="egra-s6q" style="left:120px;top:260px"><div class="cprompt"><span class="tri"></span>Click or press → to play</div><div class="ctrans"></div></div>
-  <div class="clipbox b" data-at="3" data-clip="egra-f2" style="left:120px;top:260px"><div class="cprompt"><span class="tri"></span>Click or press → to play</div><div class="ctrans"></div></div>
+  <div class="clipbox b" data-at="2" data-until="2" data-clip="egra-s6q" style="left:120px;top:270px"><div class="cwho"><span class="tag o">Child 1</span></div><div class="cprompt"><span class="tri"></span>Click or press → to play</div><div class="ctrans"></div></div>
+  <div class="clipbox b" data-at="3" data-until="3" data-clip="egra-f2" style="left:120px;top:270px"><div class="cwho"><span class="tag">Child 2</span></div><div class="cprompt"><span class="tri"></span>Click or press → to play</div><div class="ctrans"></div></div>
   <div class="b" data-at="4" style="position:absolute;inset:0;transform:none">
-    <div class="slab o" style="top:612px">Child 1</div><div class="strip o" data-strip="egra-s6q" style="top:600px"></div><div class="scnt o" style="top:580px">6 words<br><small>in 17 seconds</small></div>
-    <div class="slab g" style="top:782px">Child 2</div><div class="strip" data-strip="egra-f2" style="top:770px"></div><div class="scnt g" style="top:750px">60 words<br><small>in 25 seconds</small></div>
+    <div class="slab o" style="top:452px">Child 1</div><div class="strip o" data-strip="egra-s6q" style="top:440px"></div><div class="scnt o" style="top:420px">6 words<br><small>in 17 seconds</small></div>
+    <div class="slab g" style="top:682px">Child 2</div><div class="strip" data-strip="egra-f2" style="top:670px"></div><div class="scnt g" style="top:650px">60 words<br><small>in 25 seconds</small></div>
   </div>
   <p class="src">Two children, one reading passage, EGRA-style assessment. No names.</p>
 </section>
@@ -718,11 +758,15 @@ body.print .pass .w{color:var(--ink)}
 <!-- 15 RATIO -->
 <section class="slide" id="s-ratio" data-core="1">
   <h1 class="hd b" data-at="1">Teachers per coach.</h1>
-  <p class="cap b" data-at="1" style="position:absolute;left:120px;top:236px;margin:0;font-size:38px">Teachers at 415 schools: primary, middle and secondary</p>
+  <p class="cap b" data-at="1" data-until="4" style="position:absolute;left:120px;top:236px;margin:0;font-size:38px">Teachers at 415 schools: primary, middle and secondary</p>
+  <p class="cap b" data-at="5" style="position:absolute;left:120px;top:236px;margin:0;font-size:38px">And school heads: 307 principals, at 255 of the 415 schools</p>
   <div class="pan b" data-at="2" style="left:120px"><h5>55 coaches</h5><div class="dots" data-dots="115"></div><div class="num">115<small>teachers per coach</small></div></div>
   <div class="pan o b" data-at="3" style="left:690px"><h5>28 coaches</h5><div class="dots o" data-dots="227"></div><div class="num">227<small>teachers per coach</small></div></div>
   <div class="pan o b" data-at="4" style="left:1260px"><h5>18 coaches</h5><div class="dots o" data-dots="353"></div><div class="num">353<small>teachers per coach</small></div></div>
-  <div class="b" data-at="5" style="position:absolute;left:120px;top:940px;display:flex;align-items:center;gap:26px"><div class="dots ten q" data-dots="10"></div><span class="cap">Intensive programmes: about 10 · one dot = one teacher</span></div>
+  <div class="pp b" data-at="5" style="left:120px">6<small>principals per coach</small></div>
+  <div class="pp o b" data-at="5" style="left:690px">11<small>principals per coach</small></div>
+  <div class="pp o b" data-at="5" style="left:1260px">17<small>principals per coach</small></div>
+  <div class="b" data-at="6" style="position:absolute;left:120px;top:984px;display:flex;align-items:center;gap:26px"><div class="dots ten q" data-dots="10"></div><span class="cap" style="font-size:34px">Intensive programmes: about 10 · one dot = one teacher</span></div>
   
 </section>
 
@@ -754,13 +798,27 @@ body.print .pass .w{color:var(--ink)}
   <div class="arrowtxt b" data-at="6">Take one away and the picture breaks.</div>
 </section>
 
+<!-- COST PER TEACHER -->
+<section class="slide" id="s-cost" data-core="1">
+  <h1 class="hd b" data-at="1">What it costs per teacher.</h1>
+  <p class="cap b" data-at="1" style="position:absolute;left:120px;top:236px;margin:0;font-size:38px">US dollars per teacher, per year</p>
+  <div class="bar-row b" data-at="2" style="top:330px"><div class="lab" style="width:620px">NIETE core team<small>55 coaches · 6 mentors · Rs 36,400</small></div><div class="trk"><div class="fill" style="--w:242px"></div><span class="val" style="left:242px">128</span></div></div>
+  <div class="bar-row b" data-at="3" style="top:450px"><div class="lab" style="width:620px">NIETE smaller team<small>28 coaches · 6 mentors · Rs 26,000</small></div><div class="trk"><div class="fill" style="--w:172px"></div><span class="val" style="left:172px">91</span></div></div>
+  <div class="bar-row o b" data-at="4" style="top:620px"><div class="lab" style="width:620px;color:var(--child)">One-on-one mentoring<small>nine NGO programmes, four countries</small></div><div class="trk"><div class="fill" style="--w:800px"></div><span class="val" style="left:800px">423</span></div></div>
+  <div class="bar-row k b" data-at="5" style="top:740px"><div class="lab" style="width:620px">Peer learning circles<small>teachers meet, no coach</small></div><div class="trk"><div class="fill" style="--w:93px"></div><span class="val" style="left:93px">49</span></div></div>
+  <p class="callout g b" data-at="6" data-until="6" style="top:890px;font-size:50px">Under a third of the usual price of one-on-one coaching.</p>
+  <p class="callout b" data-at="7" style="top:890px;font-size:46px">It also covers the AI coach, quizzes, tests and dashboards.</p>
+  <p class="src">NIETE: plan price with taxes ÷ 6,354 teachers, Rs 285 per US$. Others: International Rescue Committee, 2016, programme costs only; not like for like.</p>
+</section>
+
 <!-- 16 SCENARIOS -->
-<section class="slide" id="s-scen" data-core="1">
-  <h1 class="hd b" data-at="1">Three ways to run the next year.</h1>
-  <div class="sc2 rec b" data-at="2" style="left:120px"><span class="tag">Recommended</span><svg class="ic g"><use href="#i-team"/></svg><h3>Full team</h3><div class="sub">55 coaches · 6 mentors</div><div class="money">Rs 191m</div><div class="per">a year</div><div class="mb"><i style="--w:100%"></i></div><div class="line">All six sectors</div></div>
-  <div class="sc2 o b" data-at="3" style="left:690px"><svg class="ic o"><use href="#i-team"/></svg><h3>Smaller team</h3><div class="sub">28 coaches · 3 to 6 mentors</div><div class="money sm">Rs 117m to 128m</div><div class="per">a year</div><div class="mb"><i style="--w:64%"></i></div><div class="line">Fewer visits per teacher</div></div>
-  <div class="sc2 o b" data-at="4" style="left:1260px"><svg class="ic o"><use href="#i-stop"/></svg><h3>End on 31 Dec</h3><div class="sub">The team disperses</div><div class="money">Rs 0</div><div class="per">&nbsp;</div><div class="mb"><i style="--w:0%"></i></div><div class="line">Everything stops</div></div>
-  <p class="src">12 months at the monthly rate, taxes included, added to the contract price. Smaller team indicative.</p>
+<section class="slide sc4" id="s-scen" data-core="1">
+  <h1 class="hd b" data-at="1">Four ways to run the next year.</h1>
+  <div class="sc2 b" data-at="2" style="left:120px"><svg class="ic" style="color:var(--ink)"><use href="#i-team"/></svg><h3>Full team</h3><div class="sub">All posts</div><div class="money">Rs 242m</div><div class="per">a year</div><div class="pt">Rs 38,100<small>per teacher a year</small></div><div class="mb"><i style="--w:100%;background:var(--ink)"></i></div><div class="line">All six sectors</div></div>
+  <div class="sc2 rec b" data-at="3" style="left:550px"><span class="tag">Recommended</span><svg class="ic g"><use href="#i-team"/></svg><h3>Core team</h3><div class="sub">55 coaches · 6 mentors</div><div class="money">Rs 231m</div><div class="per">a year</div><div class="pt">Rs 36,400<small>per teacher a year</small></div><div class="mb"><i style="--w:95%"></i></div><div class="line">All six sectors, same visits</div></div>
+  <div class="sc2 o b" data-at="4" style="left:980px"><svg class="ic o"><use href="#i-team"/></svg><h3>Smaller team</h3><div class="sub">28 coaches · 6 mentors</div><div class="money">Rs 165m</div><div class="per">a year</div><div class="pt">Rs 26,000<small>per teacher a year</small></div><div class="mb"><i style="--w:68%"></i></div><div class="line">One mentor per sector, fewer visits</div></div>
+  <div class="sc2 o b" data-at="5" style="left:1410px"><svg class="ic o"><use href="#i-stop"/></svg><h3>End on 31 Dec</h3><div class="sub">The team disperses</div><div class="money">Rs 0</div><div class="per">&nbsp;</div><div class="pt">Rs 0<small>and no coaching</small></div><div class="mb"><i style="--w:0%"></i></div><div class="line">Everything stops</div></div>
+  <p class="src">12 months at the monthly rate, taxes included. Per teacher: 6,354 teachers. Plan of 5 Nov, revised 19 Nov.</p>
 </section>
 
 <!-- 17 LOSS -->
@@ -831,13 +889,13 @@ body.print .pass .w{color:var(--ink)}
   <div style="position:absolute;left:120px;right:120px;top:300px">
     <table class="t b" data-at="1">
       <tr><th>Coaches / mentors</th><th class="r">Teachers per coach</th><th class="r">Per year</th></tr>
-      <tr class="hi"><td>55 / 6 &nbsp;Full team</td><td class="r">115</td><td class="r">Rs 191.06m</td></tr>
-      <tr><td>28 / 6 &nbsp;One mentor per sector</td><td class="r">227</td><td class="r">Rs 127.80m</td></tr>
-      <tr><td>28 / 3 &nbsp;Heads lead where ready</td><td class="r">227</td><td class="r">Rs 117.36m*</td></tr>
-      <tr><td>18 / 3 &nbsp;Heads lead routinely</td><td class="r">353</td><td class="r">Rs 95.36m*</td></tr>
+      <tr><td>Full team &nbsp;All posts</td><td class="r">–</td><td class="r">Rs 242m</td></tr>
+      <tr class="hi"><td>55 / 6 &nbsp;Core team</td><td class="r">115</td><td class="r">Rs 231.07m</td></tr>
+      <tr><td>28 / 6 &nbsp;One mentor per sector</td><td class="r">227</td><td class="r">Rs 164.5m</td></tr>
+      <tr><td>18 / 6 &nbsp;Minimum</td><td class="r">353</td><td class="r">Rs 137.7m*</td></tr>
     </table>
   </div>
-  <p class="src" style="font-size:26px">12 months at the monthly rate, taxes included. *Indicative. 415 schools, six FDE sectors.</p>
+  <p class="src" style="font-size:26px">12 months at the monthly rate, taxes included (plan of 5 Nov, revised 19 Nov). *Indicative. 415 schools, six FDE sectors.</p>
 </section>
 
 <!-- A3 PRICE -->
@@ -950,8 +1008,8 @@ $('.clipbox').forEach(cb=>{
       d.innerHTML='<span class="sp">'+(SPK[l.sp]||l.sp)+'</span><div class="tx"><div class="orig" '+(rtl?'dir="rtl"':'')+'>'+(rtl?latWrap(l.t):l.t)+'</div>'+((l.en&&l.en!==l.t)?'<div class="gl">'+l.en+'</div>':'')+'</div>';
       d._s=l.s;d._e=l.e;tr.appendChild(d);});
   }else{
-    const p=document.createElement('p');p.className='pass dimrest';
-    c.lines.slice(0,2).forEach(l=>{const ln=document.createElement('span');ln.className='ln';
+    const p=document.createElement('p');p.className='pass dimrest fullpass';
+    c.lines.forEach(l=>{const ln=document.createElement('span');ln.className='ln';
       l.w.forEach(w=>{const s=document.createElement('span');s.className='w'+(w.s==null?' nr':'');s.textContent=w.w.replace(/^.*…\s*/,'')+' ';s._s=w.s;s._st=w.st;ln.appendChild(s);});
       p.appendChild(ln);});
     tr.appendChild(p);
